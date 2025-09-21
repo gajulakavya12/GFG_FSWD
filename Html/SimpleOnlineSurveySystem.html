@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey</title>
+</head>
+<body>
+    <h1>Customer Feedback Survey</h1>
+    <p>Please take a moment to complete the survey below.</p>
+    <form action="#" method="post">
+    <!-- name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <!-- age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <!-- color -->
+        <label for="color">Favourite color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select><br><br>
+        <!-- feedback -->
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+        <!-- submit -->
+        <input type="submit" value="submit">
+    </form>
+
+    <h3>Instructions:</h3>
+    <ul>
+        <li>Fill in your name and age in the firsst two fields.</li>
+        <li>Select your favourite color from the dropdown list</li>
+        <li>Provide your feedback</li>
+        <li>Click the "submit" button to submit your response</li>
+    </ul>
+
+    <h2>Survey Responses</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Color</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <th>Ravinder</th>
+            <th>55</th>
+            <th>Yellow</th>
+            <th>would love to see more options</th>
+        </tr>
+        <tr>
+            <th>Swaroopa</th>
+            <th>53</th>
+            <th>Red</th>
+            <th>Great service! Keep it up</th>
+        </tr>
+    </table>
+</body>
+</html>
